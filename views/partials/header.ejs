@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Management</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+     <!-- MORRIS CHART STYLES-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand" >Admin</div>
+<!--                <a href="index.html">Admin</a> -->
+            </div>
+  <div style="color: white;
+padding: 15px 50px 5px 50px;
+float: right;
+font-size: 16px;">  <ul class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <div class="btn btn-danger"><%= user.name ? user.name: '' %></div> </a>
+                       <ul class="dropdown-menu">
+                        <li><a href="/dashboard/<%= user._id%>">Edit Account</a></li>
+                        <li><a href="#">More Info</a></li>
+                           <li><a href="#">Settings</a></li>
+                        <li><a href="/logout">Sign Out</a></li>
+                       </ul>
+                </ul>
+            </div>
+<!--
+            <div style="color: white;
+                      padding: 15px 50px 5px 50px;
+                        float: right;
+                    font-size: 16px;">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <div class="btn btn-danger">dropdown</div> </a>
+                       <ul class="dropdown-menu">
+                        <li><a href="#">Page 1-1</a></li>
+                        <li><a href="#">Page 1-2</a></li>
+                        <li><a href="#">Page 1-3</a></li>
+                       </ul>
+                </li>
+            </div>
+-->
+        </nav>
+           <!-- /. NAV TOP  -->
+                <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+				<li class="text-center">
+                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
+					</li>
+
+
+                    <li>
+                        <a class="active-menu"  href="/dashboard"><i class="fa fa-shopping-basket fa-3x"></i> &nbsp;&nbsp;Dashboard</a>
+                    </li>
+                     <li>
+                        <a  href="/assignproject"><i class="fa fa-suitcase fa-3x"></i> &nbsp;&nbsp;Assign Project</a>
+                    </li>
+                      <li  >
+                        <a  href="/developer"><i class="fa fa-edit fa-3x"></i>&nbsp;&nbsp;Developer </a>
+                    </li>
+                    <li>
+                        <a  href="/customer"><i class="fa fa-handshake-o fa-3x"></i>Customer</a>
+                    </li>
+						   <li  >
+                        <a   href="/payment"><i class="fa fa-usd fa-3x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment</a>
+                    </li>
+                      <li  >
+                        <a  href="/chat"><i class="fa fa-commenting-o fa-3x"></i>&nbsp;&nbsp; Chat</a>
+                    </li>
+
+					 <li  >
+                        <a   href="/adminregisteration"><i class="fa fa-user-circle fa-3x"></i>Admin Registeration</a>
+                    </li>
+                     <li  >
+                        <a   href="/developerregisteration"><i class="fa fa-user fa-3x"></i>Developer Registeration</a>
+                    </li>
+
+                  <li  >
+                        <a  href="/account"><i class="fa fa-address-book fa-3x"></i> Account</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
